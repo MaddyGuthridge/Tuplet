@@ -50,7 +50,11 @@ tools) be done? On a server, or on the client-side?
   would be ideal so that code could be shared (ie machine code on the server,
   and WASM on the client).
 
-## Data storage
+Overall, there would be significant issues for things like proprietary plugins,
+whose licenses probably wouldn't be especially compatible with distributed
+work.
+
+### Data storage
 
 Where will the projects be stored?
 
@@ -64,3 +68,15 @@ Where will the projects be stored?
 
 * A combination? Honestly having multiple strategies for the data storage would
   be a good design feature for keeping things modular.
+
+## Roadmap
+
+Overall, this is the direction I want to take the project:
+
+1. Collaborative MIDI sequencer, where clips can be arranged on a timeline.
+
+2. Add support for other clip types (eg audio clips).
+
+3. Add support for other audio generation strategies (eg VSTs).
+
+4. Add support for effects and audio processing chains.
